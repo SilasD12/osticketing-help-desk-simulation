@@ -1,17 +1,22 @@
 # Phase 4: SLA & Priority Management
 
-Document how SLA plans and priority levels behave across ticket scenarios.
+## Priority Matrix
 
-## What Goes Here
+| Priority | Example Issues | Response Time | Resolution Target |
+|---|---|---|---|
+| Emergency | Security breach, business-critical outage | 15 min | 1 hour |
+| High | Network down for a department, permissions blocking work | 30 min | 4 hours |
+| Normal | Software install, password reset, new hire setup | 1 hour | 8 hours |
+| Low | Equipment request, non-urgent question | 4 hours | 24 hours |
 
-- Ticket examples showing SLA compliance (within deadline) and SLA pressure (approaching/past deadline)
-- Mid-lifecycle priority or SLA changes with rationale
-- Escalation path documentation: Level I → Level II → Management
-- Priority matrix mapping issue types to response/resolution targets
+## Escalation Path
 
-## Screenshots to Capture
+**Level I (Help Desk)** → **Level II (Systems Administration)** → **Management**
 
-- A ticket within SLA showing the countdown
-- A ticket approaching or past its SLA deadline
-- Reassignment from one department/agent to another
-- Priority change history on a ticket
+## SLA Compliance
+
+<!-- Document ticket examples showing SLA behavior after completing scenarios -->
+
+## Mid-Lifecycle Changes
+
+<!-- Document any priority or SLA adjustments made during ticket work and the rationale -->

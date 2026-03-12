@@ -1,21 +1,43 @@
 # Phase 2: osTicket Administration
 
-Document the osTicket admin panel configuration that mirrors a production IT support structure.
+Full configuration details are documented in `config-summary.md`.
 
-## What Goes Here
+## Departments
 
-- **Departments** — Help Desk (Level I), Systems Administration (Level II), Management
-- **Agents** — Support staff mapped to AD accounts with role and department assignments
-- **Users** — End users registered from domain accounts (Sales, HR, IT)
-- **SLA Plans** — SEV-A (1hr/24-7), SEV-B (4hr/24-7), SEV-C (8hr/business hours)
-- **Help Topics** — Ticket categories with auto-assigned priority, department, and SLA
-- **`config-summary.md`** — Table of all configured settings
+| Department | Description | Manager |
+|---|---|---|
+| | | |
 
-## Screenshots to Capture
+![Departments](screenshots/departments-created.png)
 
-- Each department's configuration page
-- Agent panel showing created agents and permissions
-- User directory in osTicket
-- Each SLA plan's configuration page
-- Help Topics list and 2–3 individual topic configuration pages
-- Email settings (if configured)
+## Agents
+
+| Agent | Role | Department |
+|---|---|---|
+| | | |
+
+![Agents](screenshots/agents-created.png)
+
+## Users
+
+| User | OU | Email |
+|---|---|---|
+| | | |
+
+## SLA Plans
+
+| SLA | Grace Period | Schedule |
+|---|---|---|
+| SEV-A (Critical) | 1 hour | 24/7 |
+| SEV-B (High) | 4 hours | 24/7 |
+| SEV-C (Normal) | 8 hours | Business hours |
+
+![SLA Plans](screenshots/sla-plans-configured.png)
+
+## Help Topics
+
+| Help Topic | Priority | Department | SLA |
+|---|---|---|---|
+| | | | |
+
+![Help Topics](screenshots/help-topics-configured.png)

@@ -1,18 +1,24 @@
 # Phase 5: Reporting & Metrics
 
-Capture and analyze osTicket's reporting dashboard after completing all ticket scenarios.
+## Dashboard Overview
 
-## What Goes Here
+<!-- Screenshot and summary of the osTicket reporting dashboard -->
 
-- Total tickets created vs. resolved
-- Average response and resolution times
-- Tickets by department
-- Tickets by Help Topic
-- SLA compliance rate (resolved within SLA vs. overdue)
-- Analysis of any overdue tickets and why they missed SLA
+## Key Metrics
 
-## Screenshots to Capture
+| Metric | Value |
+|---|---|
+| Total tickets created | |
+| Total tickets resolved | |
+| Average response time | |
+| Average resolution time | |
+| SLA compliance rate | |
+| Overdue tickets | |
 
-- osTicket dashboard overview
-- Any available built-in reports
-- If built-in reports are limited, document what KPIs you would track in a production environment
+## Ticket Distribution
+
+<!-- Breakdown by department and help topic -->
+
+## Observations
+
+<!-- Analysis of the metrics and what they demonstrate -->

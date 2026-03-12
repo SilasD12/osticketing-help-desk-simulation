@@ -1,20 +1,40 @@
 # Phase 1: Environment Setup
 
-Document the infrastructure that supports this help desk simulation.
+## Incus Container (osTicket Host)
 
-## What Goes Here
+| Setting | Details |
+|---|---|
+| **OS** | |
+| **CPU** | |
+| **RAM** | |
+| **Disk** | |
+| **Network** | |
+| **Web Server** | |
+| **PHP Version** | |
+| **Database** | |
 
-- **Incus container configuration** — OS, resource allocation, web server stack (Apache/Nginx, PHP, MySQL/MariaDB), network config
-- **Windows Server 2025** — Domain name, OU hierarchy, user accounts created
-- **Windows 11 client** — Domain join confirmation, ability to log in as different domain users
-- **Network topology diagram** — How all three systems communicate, IP addresses, hostnames
-- **`notes.md`** — IP addresses, credentials reference, container config details
+![osTicket Dashboard](screenshots/osticket-dashboard-clean.png)
 
-## Screenshots to Capture
+![Incus Container](screenshots/incus-container-osticket.png)
 
-- osTicket admin dashboard after fresh install
-- Active Directory Users and Computers showing OUs and users
-- `ipconfig` / `ip a` output from each machine
-- Successful domain join confirmation on Win11
-- Browser accessing osTicket from the Win11 client
-- Network topology diagram (draw.io, Excalidraw, or ASCII art)
+## Active Directory Structure
+
+| OU | Users |
+|---|---|
+| | |
+
+![AD Users and OUs](screenshots/win-server-ad-users-ous.png)
+
+## Windows 11 Client
+
+Domain join confirmed. Domain users can log in from this machine to submit tickets from the end-user perspective.
+
+![Domain Join](screenshots/win11-domain-join.png)
+
+## Network Topology
+
+![Network Topology](screenshots/network-topology-diagram.png)
+
+## Notes
+
+See `notes.md` for IP addresses, hostnames, and container configuration details.
