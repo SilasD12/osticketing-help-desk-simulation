@@ -1,4 +1,4 @@
-# osTicketing Help Desk Simulation — Home Lab Project
+ # osTicketing Help Desk Simulation — Home Lab Project
 
 > A hands-on IT help desk simulation using osTicket, Windows Server 2025, and a domain-joined Windows 11 client. This project demonstrates real-world ticketing workflows, SLA management, and end-user support documentation skills.
 
@@ -162,16 +162,16 @@ Create tiered SLAs that reflect real-world urgency:
 
 Help Topics determine how tickets are categorized when users submit them:
 
-| Help Topic | Priority | Department | SLA |
-|---|---|---|---|
-| Business Critical Outage | Emergency | Systems Administration | SEV-A |
-| Password Reset | Normal | Help Desk | SEV-C |
-| Software Installation Request | Normal | Help Desk | SEV-C |
-| Network Connectivity Issue | High | Systems Administration | SEV-B |
-| New Hire Onboarding | Normal | Help Desk | SEV-C |
-| Equipment Request | Low | Help Desk | SEV-C |
-| Access / Permissions Issue | High | Systems Administration | SEV-B |
-| Security Concern | Emergency | Systems Administration | SEV-A |
+| Help Topic                    | Priority  | Department             | SLA   |
+| ----------------------------- | --------- | ---------------------- | ----- |
+| Business Critical Outage      | Emergency | Systems Administration | SEV-A |
+| Password Reset                | Normal    | Help Desk              | SEV-C |
+| Software Installation Request | Normal    | Help Desk              | SEV-C |
+| Network Connectivity Issue    | High      | Systems Administration | SEV-B |
+| New Hire Onboarding           | Normal    | Help Desk              | SEV-C |
+| Equipment Request             | Low       | Help Desk              | SEV-C |
+| Access / Permissions Issue    | High      | Systems Administration | SEV-B |
+| Security Concern              | Emergency | Systems Administration | SEV-A |
 
 **Document:** Screenshot the Help Topics list and at least 2–3 individual topic configuration pages.
 

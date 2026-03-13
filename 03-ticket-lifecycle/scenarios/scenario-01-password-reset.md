@@ -1,14 +1,14 @@
 # Scenario 1: Password Reset
 
 ## Ticket Summary
-- **Submitted by:** Alice Williams (Sales)
+- **Submitted by:** Alice Smith (Accounting)
 - **Help Topic:** Password Reset
 - **SLA:** SEV-C (Normal)
 - **Priority:** Normal
 - **Assigned To:** Help Desk / Level I
 
 ## Problem Description
-Alice Williams reports that she is locked out of her account and cannot log in to her workstation. She needs her password reset so she can resume work.
+Alice Smith reports that she is locked out of her account and cannot log in to her workstation. She needs her password reset so she can resume work.
 
 ## Steps Taken to Resolve
 

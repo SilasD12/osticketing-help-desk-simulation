@@ -84,6 +84,27 @@ Screenshots and observations are in [`05-reporting-and-metrics/`](05-reporting-a
 
 ---
 
+## Environment Troubleshooting
+
+Real issues encountered while building the lab, documented here as reference.
+
+### Cross-Network Routing: Incus Container ↔ libvirt VMs
+
+The osTicket container (Incus, `10.126.148.0/24`) and the Windows VMs (libvirt, `192.168.100.0/24`) live on two separate virtual networks. Getting them to talk required configuring the Linux host as a router between them.
+
+**Root cause:** libvirt inserts iptables rules (`LIBVIRT_FWO` / `LIBVIRT_FWI`) that reject all forwarded traffic not local to the libvirt subnet. On top of that, firewalld had no policy permitting traffic between its `libvirt` zone (`virbr1`) and `trusted` zone (`incusbr0`).
+
+**What was changed:**
+1. Verified IP forwarding was enabled on the host (`net.ipv4.ip_forward = 1`)
+2. Added two firewalld policies to allow bidirectional forwarding between the zones
+3. Inserted ACCEPT rules at the top of `LIBVIRT_FWO` and `LIBVIRT_FWI` chains, before libvirt's default REJECT rules
+4. Wrote a libvirt hook script (`/etc/libvirt/hooks/network`) to re-insert those iptables rules automatically on every network start, since libvirt regenerates its chains on each restart
+5. Added persistent static routes on both Windows VMs pointing `10.126.148.0/24` through `192.168.100.1`
+
+Full configuration, commands, and a traffic flow diagram are in [`01-environment-setup/network-routing-config.md`](01-environment-setup/network-routing-config.md).
+
+---
+
 ## Repository Structure
 
 ```
